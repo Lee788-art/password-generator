@@ -4,7 +4,7 @@ let copy = document.querySelector('.fa-copy')
 
 generate.addEventListener('click',()=>{
     let pass = ""
-    const characters = "ABCDEFGHIJKLMNOPQ&^%$#@!{}|?XYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const characters = "ABCDEFGHIJKLMNOPQ&^%$#@!{}|?XYZabcdefgh=-~{}()<>ijklmnopqrstuvwxyz0123456789";
     function generating(){
         for(let i = 0;i<=Math.floor(Math.random()*characters.length);i++){
             pass += characters.charAt(Math.floor(Math.random()*characters.length));
